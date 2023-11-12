@@ -1,0 +1,77 @@
+.burger {
+    width: 50%;
+    padding: 1rem ;
+    position: relative;
+    // margin-top: 10%;
+}
+.text {
+    width: 50%;
+}
+// .toggles {
+// //     position: absolute;
+// // }
+
+
+.needs {
+    padding-left: 30%;
+    // padding-top: 30%;
+}
+
+%layer {
+    display: none;
+
+    &.show {
+        display: block;
+        
+    }
+}
+.pomidor {
+    @extend %layer;
+}
+.salat-bargi {
+    @extend %layer;
+}
+.bodring {
+     @extend %layer;
+}
+.piyoz{
+     @extend %layer;
+}
+.gosht {
+    @extend %layer;
+}
+.pishloq {
+   @extend %layer;
+}
+
+.body {
+    color:goldenrod;
+}
+.menu{
+    border-bottom: 1px solid goldenrod;
+    padding-bottom: 15px;
+}
+.btns-maxsulotlar {
+    border-bottom: 1px solid goldenrod;
+    padding-bottom: 25px;
+}
+// .delete {
+//     border-bottom: 1px solid goldenrod;
+//     padding-bottom: 25px;
+// }
+.harid {
+    
+    width: 550px;
+    height: 300px;
+    color:white;
+    position: fixed;
+    bottom:30%;
+    left:30%;
+    visibility: hidden;
+
+    &.visibile {
+       visibility: visible;
+    }
+   
+    
+}

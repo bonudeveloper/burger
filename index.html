@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/minified/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Burger</title>
+</head>
+<body class="bg-body-secondary body">
+    <div class="container d-flex  justify-content-between py-4">
+        <aside class="burger d-flex flex-column align-items-center justify-content-center">
+           
+             <div class="needs">
+                <div class="top-bread toggles" >
+                <img src="./burger-layers/top-bread.png" alt="top">
+            </div>
+            
+                <div class="toggles pomidor">
+                    <img src="./burger-layers/tomato.png" alt="tomato" >
+                </div>
+           
+            <div class="salat-bargi toggles">
+                <img src="./burger-layers/salad.png" alt="salad">
+            </div>
+            <div class="bodring toggles">
+                <img src="./burger-layers/pickle.png" alt="pickle">
+            </div>
+            <div class="piyoz toggles">
+                <img src="./burger-layers/onion.png" alt="meat">
+            </div>
+            <div class="gosht toggles">
+                <img src="./burger-layers/meat.png" alt="meat">
+            </div>
+            <div class="pishloq toggles">
+                <img src="./burger-layers/cheese.png" alt="chesse">
+            </div>
+            <div class="burger-bread toggles">
+                <img src="./burger-layers/bottom-bread.png" alt="b-bottom">
+            </div>
+             </div>
+             <div class="narhBtn d-grid gap-2">
+        <h2>Umumiy narx: $<span class="total fs-1">2</span></h2>
+    <button class="order btn btn-success btn-lg">Buyurtma berish</button>
+    </div>
+           
+        </aside>
+        <aside class="text ">
+            <h3 class="menu">Menudan, bosish tugmasi yordamida istagan mahsulotingizni tanlang. </h3>
+            <h4>Menu:</h4>
+            <ul class="fs-5 ">
+                <li>Pishloq - $2</li>
+                <li>Go'sht - $5</li>
+                <li>Piyoz - $1</li>
+                <li>Salat bargi - $1</li>
+                <li>Pomidor - $2</li>
+                <li>Sho'r bodring - $3</li>
+                <li>Non - $2</li>
+            </ul>
+
+            <ul class=" d-flex gap-3 btns-maxsulotlar">
+                <li  class="btn btn-success maxsulot"  data-target=".pishloq" data-price="2" data-image="./burger-layers/cheese.png">Pishloq </li>
+                <li class="btn btn-success maxsulot" data-target=".gosht" data-price="5">Go'sht </li>
+                <li class="btn btn-success maxsulot" data-target=".piyoz" data-price="1">Piyoz </li>
+                <li class="btn btn-success maxsulot" data-target=".salat-bargi" data-price="1">Salat bargi </li>
+                <li class="btn btn-success maxsulot" data-target=".pomidor" data-price="2">Pomidor </li>
+                <li class="btn btn-success maxsulot" data-target=".bodring" data-price="3">Sho'r bodring </li>
+               
+            </ul>
+            <h4 class="my-4">Tanlangan mahsulotlaringizdan istaganingizni ochirish uchun tugmalar</h4>
+            <ul class="delete d-flex gap-3 ">
+                <li  class="btn btn-success del"  data-target=".pishloq" data-price="2" >Pishloq </li>
+                <li class="btn btn-success del" data-target=".gosht" data-price="5">Go'sht </li>
+                <li class="btn btn-success del" data-target=".piyoz" data-price="1">Piyoz </li>
+                <li class="btn btn-success del" data-target=".salat-bargi" data-price="1">Salat bargi </li>
+                <li class="btn btn-success del" data-target=".pomidor" data-price="2">Pomidor </li>
+                <li class="btn btn-success del" data-target=".bodring" data-price="3">Sho'r bodring </li>
+            </ul>
+            <!-- <div class="orDel d-flex gap-3 ">
+                <button class="delAll btn btn-success">Hamasini o'chirish</button>
+            
+            </div> -->
+        </aside>
+    </div>
+    <div>
+        <div class="harid bg-success rounded-4 d-flex align-items-center justify-content-center">
+        <h3 class="fs-1">Haridingiz uchun rahmat <br>Sizning navbatingiz: <span class="numZakaz fs-1"></span></h3>
+        
+    </div>
+    
+    
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
